@@ -320,7 +320,7 @@ html,body{overscroll-behavior:contain}
       </div>
     </main>
 
-    <div class="footer-note">Works offline for UI. Translation requires internet.</div>
+    <div class="footer-note">Live Translation requires internet. version 1.0</div>
   </div>
 
 <script>
@@ -391,7 +391,7 @@ html,body{overscroll-behavior:contain}
     flashLED();
     try {
       const t1 = await googleTranslate(text);
-      if (t1) { displayTranslation(t1); setStatus('active', 'Translated via Google'); return; }
+      if (t1) { displayTranslation(t1); setStatus('active', 'LIVE Translated DONE'); return; }
       throw new Error('empty');
     } catch(e1) {
       try {
